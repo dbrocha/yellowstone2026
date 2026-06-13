@@ -1,0 +1,47 @@
+{
+  "updated": "2026-06-13T01:21:07Z",
+  "alerts": [
+    {
+      "park": "Grand Teton",
+      "category": "Information",
+      "title": "Expect Delays: Park-wide Road Striping",
+      "description": "Road striping is underway from south to north on major and minor park roads, turnouts, and lots. Expect slow traffic, pilot cars, and delays up to 15 minutes. Drive with caution and do not cross wet paint lines. Work is highly weather-dependent. Plan for extra travel time.",
+      "url": ""
+    },
+    {
+      "park": "Yellowstone",
+      "category": "Caution",
+      "title": "Elk with Calves are Extremely Dangerous",
+      "description": "Be alert, especially this time of year around Mammoth Hot Springs. Elk calves may be hidden close to buildings, under or next to vehicles, and around blind corners. You must remain at least 25 yards from all wildlife. If an elk charges, retreat!",
+      "url": "https://www.nps.gov/yell/planyourvisit/safety.htm#elk"
+    },
+    {
+      "park": "Grand Teton",
+      "category": "Park Closure",
+      "title": "Construction in the south end of the park",
+      "description": "Construction projects underway. Moose-Wilson Road open between Granite Entrance and Rockefeller Preserve; closed between Rockefeller Preserve and Moose. Death Canyon Road and Trailhead closed. Taggart Trail detour in place.",
+      "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
+    },
+    {
+      "park": "Yellowstone",
+      "category": "Park Closure",
+      "title": "Temporary Closure of Some Trails, Backcountry Campsites, and Fishing Areas",
+      "description": "Certain trails, backcountry campsites, and fishing areas in the western part of the park near Biscuit Basin are closed until further notice to allow for an investigation following a bear-caused human injury.",
+      "url": "https://www.nps.gov/yell/learn/news/26008.htm"
+    },
+    {
+      "park": "Yellowstone",
+      "category": "Information",
+      "title": "Traffic Delays - Gardner River High Bridge",
+      "description": "Expect a single lane of traffic with up to 15-minute delays, 24 hours a day, seven days a week, from April 1 through late October 2026. Oversized/overweight vehicles (8'6\"+ wide, 75'+ long, 80,000 lbs+ gross vehicle weight) will not be able to cross the bridge during this time.",
+      "url": "https://www.nps.gov/yell/planyourvisit/parkroads.htm"
+    },
+    {
+      "park": "Yellowstone",
+      "category": "Information",
+      "title": "Vehicle Entrance Reservation Not Needed",
+      "description": "Although an entrance pass is required to enter Yellowstone National Park, vehicle reservations are not needed. You are encouraged to purchase an entrance pass before arriving, but you may also purchase passes at any entrance station upon arrival.",
+      "url": "https://www.nps.gov/yell/planyourvisit/fees.htm"
+    }
+  ]
+}
