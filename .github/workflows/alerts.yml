@@ -1,0 +1,44 @@
+name: Refresh NPS park alerts
+
+on:
+  schedule:
+    - cron: "17 11 * * *"   # daily ~5:17am Mountain
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-alerts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch alerts from NPS API
+        env:
+          NPS_API_KEY: ${{ secrets.NPS_API_KEY }}
+        run: |
+          if [ -z "$NPS_API_KEY" ]; then
+            echo "::warning::NPS_API_KEY secret not set — skipping (get a free key at https://www.nps.gov/subjects/developer/get-started.htm)"
+            exit 0
+          fi
+          mkdir -p data
+          curl -sf "https://developer.nps.gov/api/v1/alerts?parkCode=yell,grte&limit=50&api_key=$NPS_API_KEY" \
+            | jq '{updated: (now | todate), alerts: [.data[] | {
+                park: (if .parkCode == "yell" then "Yellowstone" else "Grand Teton" end),
+                category: .category,
+                title: .title,
+                description: (.description | if length > 280 then .[0:280] + "…" else . end),
+                url: .url
+              }]}' > data/alerts.json
+          cat data/alerts.json
+
+      - name: Commit if changed
+        run: |
+          if [ ! -f data/alerts.json ]; then exit 0; fi
+          git config user.name "alerts-bot"
+          git config user.email "actions@github.com"
+          git add data/alerts.json
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "chore: refresh NPS alerts"
+          git push
