@@ -137,7 +137,40 @@ const TRIP = {
     { id: "stillwest", name: "StillWest Brewery & Grill", coords: [43.4677, -110.7561], cat: "brewery",
       caption: "At the base of Snow King. Upscale-ish grill, killer patio.", photo: null, emoji: "🍺" },
     { id: "jac", name: "Jackson Hole Airport (JAC)", coords: [43.6073, -110.7377], cat: "airport",
-      caption: "The only commercial airport inside a national park. Fly out with a view.", photo: null, emoji: "🛫" }
+      caption: "The only commercial airport inside a national park. Fly out with a view.", photo: null, emoji: "🛫" },
+
+    /* --- alternates: medium hikes + bonus sights --- */
+    { id: "yellowstoneRiverTrail", name: "Yellowstone River Picnic Trail", coords: [44.9128, -110.3960], cat: "hike",
+      caption: "3.7 mi RT along the canyon narrows rim near Tower — Calcite Springs below, bighorn sheep on the cliffs, almost nobody on it.", photo: null, emoji: "🐏" },
+    { id: "hellroaring", name: "Hellroaring Creek", coords: [44.9460, -110.4540], cat: "hike",
+      caption: "4 mi RT down to a suspension bridge over the Yellowstone. The climb back out earns the name.", photo: null, emoji: "🌉" },
+    { id: "undineFalls", name: "Undine Falls", coords: [44.9447, -110.6440], cat: "scenic",
+      caption: "60-ft triple-tier falls, basically roadside. Pairs with Wraith Falls next door.", photo: null, emoji: "💧" },
+    { id: "mudVolcano", name: "Mud Volcano & Dragon's Mouth", coords: [44.6245, -110.4335], cat: "geyser",
+      caption: "0.7 mi boardwalk of burping mud. Dragon's Mouth Spring growls from its cave. Kids: obsessed.", photo: null, emoji: "🌋" },
+    { id: "loneStar", name: "Lone Star Geyser", coords: [44.4400, -110.8030], cat: "hike",
+      caption: "4.8 mi RT on a flat old service road to a 12-ft cone that erupts every ~3 hours. Time it right and it's a private show.",
+      photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Lone_Star_Geyser_2016.jpg/330px-Lone_Star_Geyser_2016.jpg" },
+    { id: "elephantBack", name: "Elephant Back Mountain", coords: [44.5587, -110.4140], cat: "hike",
+      caption: "3.6 mi loop · 800 ft. Summit panorama of Yellowstone Lake, ending steps from the Lake Hotel porch.", photo: null, emoji: "🐘" },
+    { id: "delacy", name: "Shoshone Lake (DeLacy Creek)", coords: [44.4920, -110.7180], cat: "hike",
+      caption: "3 flat-ish miles of creek meadow each way to the biggest backcountry lake in the lower 48. Moose country.",
+      photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/ShoshoneLake1989.jpg/330px-ShoshoneLake1989.jpg" },
+    { id: "leighLake", name: "Leigh Lake", coords: [43.7990, -110.7310], cat: "scenic",
+      caption: "Flat shoreline miles and sandy coves staring straight up Mount Moran. The quiet sibling of String Lake.",
+      photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Leigh_Lake_Grand_Teton_National_Park.jpg/330px-Leigh_Lake_Grand_Teton_National_Park.jpg" },
+    { id: "phelpsLake", name: "Phelps Lake · LSR Preserve", coords: [43.6294, -110.7755], cat: "hike",
+      caption: "The Rockefellers' old retreat — quiet woods, a green-blue lake, a famous jumping rock. Lot fills by 9am.", photo: null, emoji: "🍃" },
+    { id: "grandViewPoint", name: "Grand View Point", coords: [43.9009, -110.5350], cat: "hike",
+      caption: "2.2 mi RT · 550 ft, ten minutes from the lodge — the whole range stacked behind Jackson Lake.", photo: null, emoji: "🔭" },
+    { id: "jhTram", name: "Aerial Tram · Teton Village", coords: [43.5875, -110.8279], cat: "scenic",
+      caption: "Big Red: 12 minutes to 10,450 ft. Waffles at Corbet's Cabin on top. Zero effort, full summit.",
+      photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Jackson_hole_new_tram.jpg/330px-Jackson_hole_new_tram.jpg" },
+    { id: "snakeRiverOverlook", name: "Snake River Overlook", coords: [43.7330, -110.6430], cat: "scenic",
+      caption: "The Ansel Adams 1942 shot. The trees have grown but the Tetons haven't moved.", photo: null, emoji: "📷" },
+    { id: "surpriseAmphitheater", name: "Surprise & Amphitheater Lakes", coords: [43.7345, -110.7410], cat: "hike",
+      caption: "9.6 mi RT · ~3,000 ft of switchbacks to two alpine cirque lakes under the Grand. The earn-it option.",
+      photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Amphitheater_Lake.jpg/330px-Amphitheater_Lake.jpg" }
   ],
 
   /* ---------- DAY-BY-DAY ---------- */
@@ -167,8 +200,9 @@ const TRIP = {
         { tier: "mustsee", icon: "🐺", title: "Dawn patrol (leave ~5:30am)", body: "Coffee in thermoses, kids in blankets, drive to Lamar in the half-light. Park at Slough Creek with the wolf-watchers — they'll usually share scopes. Bison jams guaranteed." },
         { tier: "hike", icon: "🦦", title: "Trout Lake", body: "1.2 mi RT, one steep-ish climb, then a perfect lake with otters and cutthroat trout. The best effort-to-magic ratio in the park." },
         { tier: "easy", icon: "👶", title: "Pullout safari (baby-approved)", body: "The entire Lamar road is pullout after pullout. Wildlife watching from camp chairs while the baby naps in the car seat. Binoculars mandatory." },
-        { tier: "easy", icon: "🍦", title: "Tower Fall + ice cream", body: "132-ft waterfall, 5-minute overlook walk, general store ice cream. Hits on the drive back. Undine Falls + Wraith Falls (1 mi) are bonus stops near Mammoth." },
-        { tier: "hike", icon: "⛰️", title: "Sleepers-in: Bunsen Peak", body: "For anyone who refuses the 5:30 alarm — 4.6 mi RT / 1,300 ft right out of Mammoth, 360° summit views. Or just do the Terraces boardwalk slow." }
+        { tier: "medium", icon: "🐏", title: "Yellowstone River Picnic Trail", body: "3.7 mi RT along the rim of the canyon narrows near Tower — Calcite Springs steaming below, bighorn sheep on the cliffs, a tenth of the crowds. Wilder cousin next door: Hellroaring (4 mi RT) drops to a suspension bridge over the river — the climb back out is real." },
+        { tier: "easy", icon: "🍦", title: "Tower Fall + ice cream", body: "132-ft waterfall, 5-minute overlook walk, general store ice cream. Hits on the drive back. Undine Falls + Wraith Falls (1 mi) are bonus stops near Mammoth, and the Petrified Tree is a 2-minute detour." },
+        { tier: "hike", icon: "⛰️", title: "Sleepers-in: Bunsen Peak", body: "For anyone who refuses the 5:30 alarm — 4.6 mi RT / 1,300 ft right out of Mammoth, 360° summit views. Mellower: Beaver Ponds Loop (5 mi) straight from the hotel, or the Terraces boardwalk slow." }
       ],
       rendezvous: "Late lunch back at Mammoth or picnic at Slough Creek. Compare wildlife tallies — winner picks dinner.",
       fuel: "Pack a cooler picnic — there is NOTHING to buy in Lamar (that's the point). Tower Fall General Store for ice cream + snacks. Dinner back at Mammoth/Gardiner."
@@ -182,6 +216,7 @@ const TRIP = {
       options: [
         { tier: "hike", icon: "🥾", title: "Mt. Washburn", body: "6.2 mi RT · 1,400 ft from Dunraven Pass to a 10,243-ft fire lookout. Bighorn sheep, wildflowers, hundred-mile views. The trip's first Big One. Bring layers — it's windy up top." },
         { tier: "hike", icon: "💪", title: "Brink of the Lower Falls", body: "Only 0.7 mi RT but steep switchbacks — you stand at the LIP of the falls and feel it in your chest. Strong kids OK, not stroller territory." },
+        { tier: "medium", icon: "🖼️", title: "South Rim to Point Sublime", body: "From Artist Point keep walking — 2.6 mi RT along the rim to railings hanging over the canyon's wildest stretch. Or loop Clear Lake–Ribbon Lake (5.5 mi) through bubbling backcountry thermal fields. Brink of the Upper Falls is a 5-minute bonus stop." },
         { tier: "easy", icon: "👶", title: "Artist Point + Grand View", body: "Paved, stroller-friendly, and genuinely the best view in the park. The painting-famous one. Hit multiple rim overlooks by car." },
         { tier: "mustsee", icon: "♨️", title: "Norris on the loop home", body: "Porcelain Basin boardwalk (0.8 mi) — hissing, steaming, otherworldly. Home of Steamboat, the world's tallest geyser. Optional if energy allows; otherwise it's tomorrow's first stop." }
       ],
@@ -196,6 +231,7 @@ const TRIP = {
       stops: ["mammothHotel", "norris", "paintpots", "gibbonFalls", "westThumb", "grant"],
       options: [
         { tier: "mustsee", icon: "♨️", title: "Norris Geyser Basin", body: "If skipped yesterday: the hottest, weirdest basin in the park. Porcelain Basin loop is 0.8 mi of boardwalk through a steaming moonscape." },
+        { tier: "medium", icon: "⛰️", title: "Monument Geyser Basin", body: "2 mi RT, short but steep — ghostly old sinter cones on a ridge with the whole Gibbon valley at your feet. Roaring Mountain's hissing slope is a free pullout on the way down from Norris." },
         { tier: "easy", icon: "🎨", title: "Artists Paintpots", body: "1 mi loop, bubbling pastel mud pots that sound like a soup pot. Top-tier kid content. Gibbon Falls is a 30-second stop just down the road." },
         { tier: "easy", icon: "👶", title: "West Thumb at golden hour", body: "0.6 mi boardwalk where hot springs spill into Yellowstone Lake — 2 minutes from Grant. Stroller-OK. Perfect pre-dinner leg-stretch." },
         { tier: "musthave", icon: "🍽️", title: "DINNER: Grant Village Restaurant · 7:30 PM", body: "Booked! Lakeside dining room, casual. Don't be the table that's late because of a bison jam — pad the drive." }
@@ -213,6 +249,8 @@ const TRIP = {
         { tier: "mustsee", icon: "⛲", title: "Old Faithful + Upper Geyser Basin", body: "Catch an eruption (every ~90 min — check predictions, grab benches early), then walk the boardwalk past Grand, Castle + Morning Glory Pool. Gawk at the Old Faithful Inn lobby. Huckleberry ice cream downstairs." },
         { tier: "mustsee", icon: "🌈", title: "Grand Prismatic — twice", body: "Midway boardwalk (0.8 mi, stroller-OK) puts you at the steaming rim; the Overlook (1.2 mi RT from Fairy Falls TH) gets you THE photo. Do the overlook if you pick one. ⚠️ Biscuit Basin remains closed (2024 hydrothermal explosion)." },
         { tier: "hike", icon: "🥾", title: "Fairy Falls", body: "5.4 mi RT, dead flat, ends at a lacy 200-ft waterfall. The mellow Big Hike — kids with stamina can do it." },
+        { tier: "medium", icon: "🔭", title: "Observation Point + Lone Star", body: "Observation Point (1.6 mi RT) puts Old Faithful's eruption below you instead of in front of you. Lone Star Geyser is 4.8 flat miles RT of old service road to a 12-ft cone that fires every ~3 hours — check the trailhead logbook and time it. Quick bonus stops: Black Sand Basin, Kepler Cascades." },
+        { tier: "medium", icon: "🐘", title: "Elephant Back before dinner", body: "3.6 mi loop · 800 ft, topping out on a panorama of Yellowstone Lake — and the trail ends a few steps from the Lake Hotel porch. Earn the 4:45 reservation." },
         { tier: "musthave", icon: "🍽️", title: "DINNER: Lake Yellowstone Hotel · 4:45 PM", body: "Booked! The 1891 grande dame — sunroom, string quartet energy, collared shirts encouraged. Leave the geysers by 3:30." },
         { tier: "easy", icon: "🦬", title: "Hayden Valley dusk drive", body: "After dinner, loop home through Hayden at golden hour — prime bison + grizzly time, all from the car. Baby-proof wildlife viewing." }
       ],
@@ -227,7 +265,9 @@ const TRIP = {
       stops: ["grant", "stormPoint", "lewisFalls", "jll", "colterBay", "oxbow"],
       options: [
         { tier: "hike", icon: "🌊", title: "Storm Point loop", body: "2.3 mi easy loop to a blustery point over Yellowstone Lake. Marmots everywhere. Great pre-drive energy burn for the kids." },
+        { tier: "medium", icon: "🌲", title: "Shoshone Lake via DeLacy Creek", body: "Before leaving Yellowstone: 3 flat-ish miles of creekside meadow each way to the largest backcountry lake in the lower 48 — moose like it as much as people do. Shorter alt: Yellowstone Lake Overlook from West Thumb, 2 mi RT / 400 ft, the geyser basin and lake from above." },
         { tier: "easy", icon: "🏖️", title: "Colter Bay beach afternoon", body: "Kids + baby swim/splash in Jackson Lake with the Tetons across the water. Lakeshore trail (2 mi) is stroller-able. Leek's Marina pizza on the water for lazy lunch." },
+        { tier: "medium", icon: "🔭", title: "Grand View Point at golden hour", body: "Ten minutes north of the lodge: 2.2 mi RT · 550 ft through lodgepole forest to a ledge with Two Ocean Lake below and the whole range stacked behind Jackson Lake." },
         { tier: "easy", icon: "🍹", title: "Lodge arrival ritual", body: "Check in, walk into the lobby, let the 60-ft windows do their thing. Cocktail at the Blue Heron Lounge, kids on the back terrace, Lunch Tree Hill (0.5 mi) for sunset." },
         { tier: "mustsee", icon: "🌄", title: "Oxbow Bend at dusk", body: "5 min from the lodge — Mt. Moran reflected in the Snake River, moose + eagles on patrol. You'll be back at sunrise." }
       ],
@@ -243,6 +283,8 @@ const TRIP = {
       options: [
         { tier: "mustsee", icon: "⛴️", title: "Jenny Lake boat → Hidden Falls", body: "Shuttle boats cross all day (kids LOVE it). From the dock: 0.5 mi to Hidden Falls, then 1 mi / 400 ft up to Inspiration Point. Most of the crew can do this one." },
         { tier: "hike", icon: "🥾", title: "Cascade Canyon", body: "Continue past Inspiration Point into the canyon — granite walls, moose ponds, snowfields. Turn around whenever; the forks are ~9–10 mi RT total. THE Teton big hike." },
+        { tier: "hike", icon: "🏔️", title: "Alt big: Surprise & Amphitheater Lakes", body: "9.6 mi RT · ~3,000 ft of relentless switchbacks from Lupine Meadows to two alpine cirque lakes tucked under the Grand itself. Trade Cascade Canyon for this if you want the full burn." },
+        { tier: "medium", icon: "🛶", title: "Leigh Lake shoreline", body: "Flat 1.8 mi RT from the String Lake lot (keep going as long as legs allow) — sandy coves staring straight up Mount Moran, and far fewer people than Jenny. The mellow-medium counterweight to the boat-dock crowds." },
         { tier: "easy", icon: "👶", title: "String Lake base camp", body: "Shallow, sandy-edged, the warmest water in the park, Mount Moran straight ahead. Set up chairs and let the kids + baby live their best lives. Arrive early for parking." },
         { tier: "brewery", icon: "🍕", title: "Evening: Dornan's in Moose", body: "Pizza + pasta on the deck, the Grand Teton filling the sky, surprisingly great wine shop next door. Casual, loud, perfect for 13 people." }
       ],
@@ -256,8 +298,10 @@ const TRIP = {
       blurb: "Choose your own adventure: dawn photos, a proper summit-ish hike, or a town day with the breweries — then everyone cleans up for the big farewell dinner under the murals.",
       stops: ["jll", "oxbow", "schwabacher", "mormonRow", "taggart", "jacksonTown", "snakeRiverBrew"],
       options: [
-        { tier: "mustsee", icon: "🌅", title: "Sunrise photo run", body: "Oxbow Bend → Schwabacher Landing → Mormon Row, all before 8am light. Moulton barns + mirror-pond Tetons. The shots that end up framed." },
+        { tier: "mustsee", icon: "🌅", title: "Sunrise photo run", body: "Oxbow Bend → Snake River Overlook (the Ansel Adams shot) → Schwabacher Landing → Mormon Row, all before 8am light. Moulton barns + mirror-pond Tetons. The shots that end up framed." },
         { tier: "hike", icon: "🥾", title: "Taggart Lake (family) or Delta Lake (heroes)", body: "Taggart: 3.8 mi RT, gentle, swimmable lake. Delta: 7.4 mi RT / 2,300 ft, unofficial trail, turquoise glacier lake — strenuous sendoff for the strong hikers only." },
+        { tier: "medium", icon: "🍃", title: "Phelps Lake · LSR Preserve", body: "The Rockefeller family's old retreat, gifted to the park — hushed trails to a green-blue lake with a famous jumping rock. 3–7 mi depending on your loop. The tiny lot fills by 9am; worth the alarm." },
+        { tier: "mustsee", icon: "🚡", title: "Big Red tram to 10,450 ft", body: "Jackson Hole's aerial tram out of Teton Village: 12 minutes to the top of Rendezvous Peak, waffles at Corbet's Cabin, zero effort for a full summit. Kids think it's a ride. It is. Cunningham Cabin is a quick photo pull on the drive." },
         { tier: "brewery", icon: "🍺", title: "Jackson brewery crawl", body: "Snake River Brewing (WY's oldest — beer garden + wood-fired pizza, kids fine), Roadhouse Pub & Eatery just off the square, StillWest at Snow King with the patio. Pace yourselves — dinner's at 5:15." },
         { tier: "easy", icon: "🤠", title: "Town Square + shops", body: "Antler arches, boardwalks, huckleberry taffy, cowboy kitsch. Stagecoach rides for the kids. Scenic Snake River float trips launch nearby (kids ~4+, book ahead)." },
         { tier: "musthave", icon: "🍽️", title: "DINNER: The Mural Room · 5:15 PM", body: "Booked — 3 tables of 4! Trapper murals, white tablecloths, and the Tetons going gold through the windows. Be back at the lodge by 4:30 to de-trail-dust." }

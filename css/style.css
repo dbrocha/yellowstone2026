@@ -406,6 +406,7 @@ section { padding: clamp(44px, 7vw, 88px) 0 0; }
   padding: 4px 11px; border-radius: 2px; border: 1.5px solid;
 }
 .tier-chip--hike { color: #2e4d68; border-color: #2e4d68; background: #2e4d680f; }
+.tier-chip--medium { color: #45707a; border-color: #45707a; background: #45707a0f; }
 .tier-chip--easy { color: #3f6b3a; border-color: #3f6b3a; background: #3f6b3a0f; }
 .tier-chip--mustsee { color: var(--ember-deep); border-color: var(--ember-deep); background: #99502c0f; }
 .tier-chip--brewery { color: #7c5c14; border-color: #a87b22; background: #b98a3318; }
@@ -468,6 +469,7 @@ section { padding: clamp(44px, 7vw, 88px) 0 0; }
   padding: 3px 9px; border-radius: 2px; border: 1.5px solid;
 }
 .option--hike .option__tag { color: #2e4d68; border-color: #2e4d68; }
+.option--medium .option__tag { color: #45707a; border-color: #45707a; }
 .option--easy .option__tag { color: #3f6b3a; border-color: #3f6b3a; }
 .option--mustsee .option__tag { color: var(--ember-deep); border-color: var(--ember-deep); }
 .option--brewery .option__tag { color: #7c5c14; border-color: #a87b22; }

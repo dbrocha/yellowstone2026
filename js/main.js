@@ -3,7 +3,7 @@
    ============================================================ */
 
 const TIER_LABEL = {
-  hike: "Big Hike", easy: "Easy / Baby OK", mustsee: "Must-See",
+  hike: "Big Hike", medium: "Medium Hike", easy: "Easy / Baby OK", mustsee: "Must-See",
   brewery: "Beer", musthave: "Locked In"
 };
 
