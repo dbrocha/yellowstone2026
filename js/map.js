@@ -3,15 +3,15 @@
    ============================================================ */
 
 const PIN_STYLES = {
-  hotel:   { color: "#c0392b", dark: "#7f241a", label: "Home base" },
-  geyser:  { color: "#e07b28", dark: "#9c4f12", label: "Thermal stuff" },
-  wildlife:{ color: "#3c7a46", dark: "#24512c", label: "Wildlife" },
-  hike:    { color: "#2b5d8a", dark: "#173a59", label: "Hikes" },
-  scenic:  { color: "#3e9b94", dark: "#23625d", label: "Scenic" },
-  food:    { color: "#8e44ad", dark: "#5e2c73", label: "Food" },
-  town:    { color: "#8e44ad", dark: "#5e2c73", label: "Town" },
-  brewery: { color: "#c8941f", dark: "#8a6313", label: "Breweries" },
-  airport: { color: "#5d6d7e", dark: "#36404a", label: "Airports" }
+  hotel:   { color: "#8f2f23", dark: "#5c1d15", label: "Home base" },
+  geyser:  { color: "#b06f25", dark: "#74470f", label: "Thermal stuff" },
+  wildlife:{ color: "#3f6b3a", dark: "#27451f", label: "Wildlife" },
+  hike:    { color: "#2e4d68", dark: "#1b3145", label: "Hikes" },
+  scenic:  { color: "#4a7d74", dark: "#2d4f48", label: "Scenic" },
+  food:    { color: "#6e4f7d", dark: "#45304f", label: "Food" },
+  town:    { color: "#6e4f7d", dark: "#45304f", label: "Town" },
+  brewery: { color: "#a87b22", dark: "#6e4f12", label: "Breweries" },
+  airport: { color: "#5c6258", dark: "#383c35", label: "Airports" }
 };
 
 const MAP_STATE = { map: null, yarns: {}, markers: {}, activeDay: null };
@@ -98,7 +98,7 @@ function drawYarn() {
       path = path.concat(yarnPoints(stops[i].coords, stops[i + 1].coords));
     }
     const line = L.polyline(path, {
-      color: "#c0392b", weight: 3, opacity: 0.85,
+      color: "#8f2f23", weight: 3, opacity: 0.85,
       className: "yarn-path",
       dashArray: null, lineCap: "round"
     }).addTo(MAP_STATE.map);

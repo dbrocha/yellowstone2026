@@ -148,7 +148,7 @@ async function loadAlerts() {
     }
     board.innerHTML = alerts.map(a => {
       const kind = /closure/i.test(a.category) ? "closure" : (/danger|caution/i.test(a.category) ? "" : "info");
-      return `<div class="alert-note alert-note--${kind} reveal">
+      return `<div class="alert-note alert-note--${kind}">
         <span class="park">${a.park} · ${a.category}</span>
         <h4>${a.title}</h4>
         <p>${a.description || ""} ${a.url ? `<a href="${a.url}" target="_blank" rel="noopener">more ↗</a>` : ""}</p>
