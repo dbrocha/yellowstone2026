@@ -1,6 +1,20 @@
 {
-  "updated": "2026-06-18T12:25:42Z",
+  "updated": "2026-06-19T12:34:39Z",
   "alerts": [
+    {
+      "park": "Grand Teton",
+      "category": "Caution",
+      "title": "Construction in the South End of the Park",
+      "description": "Construction projects underway. Moose-Wilson Road open between Granite Entrance and Moose June 19 - Sept. 7. Expect delays of 45 minutes or longer. Death Canyon Road and Trailhead closed. Taggart Trail detour in place.",
+      "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
+    },
+    {
+      "park": "Grand Teton",
+      "category": "Park Closure",
+      "title": "Death Canyon Trailhead Construction Closure",
+      "description": "Death Canyon Road and Trailhead are closed to all use. Start hikes at alternative trailheads such as Granite Canyon, LSR Preserve, and Taggart Lake.",
+      "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
+    },
     {
       "park": "Grand Teton",
       "category": "Information",
@@ -14,13 +28,6 @@
       "title": "Elk with Calves are Extremely Dangerous",
       "description": "Be alert, especially this time of year around Mammoth Hot Springs. Elk calves may be hidden close to buildings, under or next to vehicles, and around blind corners. You must remain at least 25 yards from all wildlife. If an elk charges, retreat!",
       "url": "https://www.nps.gov/yell/planyourvisit/safety.htm#elk"
-    },
-    {
-      "park": "Grand Teton",
-      "category": "Park Closure",
-      "title": "Construction in the south end of the park",
-      "description": "Construction projects underway. Moose-Wilson Road open between Granite Entrance and Rockefeller Preserve; closed between Rockefeller Preserve and Moose. Death Canyon Road and Trailhead closed. Taggart Trail detour in place.",
-      "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
     },
     {
       "park": "Yellowstone",
