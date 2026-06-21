@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yellowstone 2026 — The Pioneers · Field Plan</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏔️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Special+Elite&family=Bitter:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --evergreen:#22382a; --evergreen-deep:#16261c; --moss:#41573d;
+      --timber:#3e2c1a; --timber-mid:#5a4127; --amber:#9a6f1f; --ember:#99502c; --ember-deep:#7c3e20;
+      --ink:#23201a; --rule:#cbbd99; --paper:#fffdf7;
+      --font-display:"Bevan",Georgia,serif; --font-type:"Special Elite","Courier New",monospace; --font-body:"Bitter",Georgia,serif;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:var(--font-body);color:var(--ink);background:#fff;font-size:10.5px;line-height:1.5;}
+
+    /* screen-only download bar */
+    .toolbar{position:sticky;top:0;z-index:10;background:var(--evergreen);color:#f1e9d4;
+      display:flex;gap:16px;align-items:center;justify-content:center;padding:10px 16px;
+      font-family:var(--font-type);font-size:13px;}
+    .toolbar button{font-family:var(--font-type);font-size:13px;background:var(--amber);color:#1c150a;
+      border:none;padding:8px 18px;border-radius:3px;cursor:pointer;letter-spacing:.04em;}
+    .toolbar span{opacity:.85;}
+
+    .page{max-width:7.3in;margin:0 auto;padding:0 .3in;}
+
+    /* cover */
+    .cover{text-align:center;padding:34px 0 18px;border-bottom:3px double var(--timber);margin-bottom:18px;}
+    .cover .kick{font-family:var(--font-type);letter-spacing:.32em;font-size:9px;color:var(--ember-deep);}
+    .cover h1{font-family:var(--font-display);font-size:42px;color:var(--evergreen);line-height:1.02;margin:6px 0 2px;letter-spacing:.01em;}
+    .cover .sub{font-family:var(--font-display);font-size:15px;color:var(--amber);letter-spacing:.1em;}
+    .cover .dates{font-weight:800;letter-spacing:.18em;margin-top:12px;font-size:12px;color:var(--evergreen);}
+    .cover .crew{font-family:var(--font-type);letter-spacing:.12em;font-size:10px;color:var(--ember-deep);margin-top:5px;}
+    .cover .route{font-family:var(--font-type);font-size:10px;margin-top:12px;color:var(--timber);}
+
+    h2.sec{font-family:var(--font-display);font-size:16px;color:var(--evergreen);margin:0 0 8px;
+      border-bottom:2px solid var(--amber);padding-bottom:3px;}
+    .sec-wrap{margin-bottom:18px;}
+
+    /* quick reference grid */
+    .qref{display:grid;grid-template-columns:1fr 1fr;gap:10px 20px;}
+    .qref .blk{break-inside:avoid;}
+    .qref h3{font-family:var(--font-type);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ember-deep);margin-bottom:3px;border-bottom:1px solid var(--rule);}
+    .qref ul{list-style:none;}
+    .qref li{margin:3px 0;}
+    .qref .when{font-family:var(--font-type);font-size:8.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--ember-deep);}
+    .qref strong{color:var(--evergreen);}
+
+    /* weather callout */
+    .wx{border:1.5px solid var(--rule);border-left:5px solid var(--amber);padding:10px 12px;background:#fdfaf1;break-inside:avoid;}
+    .wx table{width:100%;border-collapse:collapse;margin:6px 0;font-size:9.5px;}
+    .wx th,.wx td{text-align:left;padding:2px 6px 2px 0;border-bottom:1px solid #eee3c8;vertical-align:top;}
+    .wx th{font-family:var(--font-type);font-size:8.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--ember-deep);}
+    .wx .verdict{margin-top:7px;}
+    .wx .verdict b{color:var(--ember-deep);}
+    .flag{font-weight:800;}
+    .flag.go{color:#2f6d33;} .flag.warn{color:#9a3b14;}
+
+    /* day blocks */
+    .day{break-inside:avoid;margin-bottom:15px;padding-bottom:11px;border-bottom:1px solid var(--rule);}
+    .day-head{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;}
+    .day-num{font-family:var(--font-display);font-size:21px;color:var(--amber);line-height:1;}
+    .day-date{font-family:var(--font-type);font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--ember-deep);}
+    .day-title{font-family:var(--font-display);font-size:14px;color:var(--evergreen);}
+    .day-special{font-family:var(--font-type);font-size:9px;color:var(--ember);border:1px dashed var(--ember);padding:1px 5px;}
+    .day-meta{font-family:var(--font-type);font-size:9px;color:#5e533a;margin:3px 0 2px;}
+    .day-blurb{font-style:italic;color:#4a4230;margin-bottom:6px;}
+    .opts{display:grid;grid-template-columns:1fr 1fr;gap:5px 16px;}
+    .opt{break-inside:avoid;padding-left:0;}
+    .opt .tag{font-family:var(--font-type);font-size:7.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+      border:1px solid;border-radius:2px;padding:0 4px;margin-right:4px;white-space:nowrap;}
+    .tag.hike{color:#2e4d68;border-color:#2e4d68;}
+    .tag.medium{color:#3c6068;border-color:#3c6068;}
+    .tag.easy{color:#3f6b3a;border-color:#3f6b3a;}
+    .tag.mustsee{color:var(--ember-deep);border-color:var(--ember-deep);}
+    .tag.brewery{color:#7c5c14;border-color:#7c5c14;}
+    .tag.musthave{color:#fff;background:var(--evergreen);border-color:var(--evergreen);}
+    .opt .ti{font-weight:800;color:var(--evergreen);}
+    .opt .bo{color:#423c2c;}
+    .day-foot{margin-top:6px;font-size:9.5px;}
+    .day-foot .lbl{font-family:var(--font-type);font-size:8px;letter-spacing:.06em;text-transform:uppercase;color:var(--ember-deep);}
+
+    /* camp + beer compact */
+    .base{break-inside:avoid;margin-bottom:11px;}
+    .base h3{font-family:var(--font-display);font-size:12px;color:var(--evergreen);}
+    .base .nights{font-family:var(--font-type);font-size:8.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ember-deep);}
+    .base .cols{display:grid;grid-template-columns:1fr 1fr;gap:2px 18px;margin-top:3px;}
+    .base h4{font-family:var(--font-type);font-size:8.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--amber);margin-top:3px;}
+    .base ul{list-style:none;}
+    .base li{margin:1px 0;padding-left:9px;position:relative;}
+    .base li::before{content:"–";position:absolute;left:0;color:var(--ember);}
+
+    .beer{columns:2;column-gap:20px;}
+    .beer .b{break-inside:avoid;margin-bottom:6px;}
+    .beer .bn{font-weight:800;color:var(--evergreen);}
+    .beer .bt{font-family:var(--font-type);font-size:8px;letter-spacing:.06em;text-transform:uppercase;color:var(--ember-deep);}
+
+    .notes li{margin:3px 0;}
+    .footer{text-align:center;font-family:var(--font-type);font-size:8.5px;color:#6b5d3f;margin:14px 0 24px;padding-top:8px;border-top:1px solid var(--rule);}
+
+    @media print{
+      .toolbar{display:none;}
+      body{font-size:10px;}
+      .page{max-width:none;padding:0;}
+      .page-break{break-before:page;}
+      a{color:inherit;text-decoration:none;}
+    }
+    @page{margin:0.5in 0.55in;}
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <span>📄 Field plan — print or save as PDF</span>
+    <button onclick="window.print()">Save as PDF / Print</button>
+  </div>
+
+  <div class="page" id="doc"></div>
+
+  <script src="js/trip-data.js"></script>
+  <script>
+    const TIER = { hike:"Big Hike", medium:"Medium", easy:"Easy/Baby", mustsee:"Must-See", brewery:"Beer", musthave:"Locked In" };
+
+    // weather snapshot (pulled June 21, 2026 from Open-Meteo) + game-time advice
+    const WX = {
+      pulled: "June 21, 2026",
+      rows: [
+        ["Mon 22","Mammoth","Canyon + Mt. Washburn","Overcast 74° · 16% rain · calm","go","Go"],
+        ["Tue 23","→ Grant","Drive + geyser basins","Clear 0–1% rain — driest day","go","Best day for it"],
+        ["Wed 24","Grant","Old Faithful, Grand Prismatic","Drizzle 74° · 15%","go","Fine — geysers love damp"],
+        ["Thu 25","→ JLL","Storm Point, Colter Bay","Overcast 77° · 7%","go","Go"],
+        ["Fri 26","JLL","Jenny Lake + Cascade Canyon","Warm 80° · 13% · gusts 35","go","BEST Teton day — do big hikes now"],
+        ["Sat 27","JLL","Town, breweries, Mural Room","Cold 62° · 53% · t-storms · gusts 44","warn","Town day; skip exposed hikes & tram"],
+        ["Sun 28","Fly out","Drive to JAC","51° · snow showers up high · 43%","warn","Pad the drive"],
+      ],
+      advice: [
+        "<b>Pull the big alpine hikes to Friday (26th).</b> Amphitheater/Surprise Lakes & Delta Lake share the Lupine Meadows trailhead with Cascade Canyon — stack them on the best day.",
+        "<b>Make Saturday (27th) the town day.</b> Cold, wet, t-storms, 44 mph gusts. Jackson + breweries + shops fit it perfectly, and the Mural Room dinner (5:15, indoors) is ideally placed. Move the sunrise photo run to <b>Friday morning</b>.",
+        "<b>Skip the aerial tram Saturday</b> — high wind = wind-hold + whiteout views. Friday is the only tram window.",
+      ]
+    };
+
+    function el(html){ const d=document.createElement('div'); d.innerHTML=html.trim(); return d.firstChild; }
+
+    function render(){
+      const doc = document.getElementById('doc');
+      const m = TRIP.meta;
+
+      // COVER
+      doc.appendChild(el(`<div class="cover">
+        <div class="kick">THE PIONEERS · EXPEDITION No. 1 · FIELD PLAN</div>
+        <h1>YELLOWSTONE</h1>
+        <div class="sub">&amp; THE GRAND TETONS</div>
+        <div class="dates">${m.dates.toUpperCase()}</div>
+        <div class="crew">${m.crew}</div>
+        <div class="route">BZN ✈ → Mammoth ×3 → Grant Village ×2 → Jackson Lake Lodge ×3 → ✈ JAC &nbsp;·&nbsp; No cell service in most of the parks — keep this handy</div>
+      </div>`));
+
+      // QUICK REFERENCE
+      const hotels = TRIP.bases.map(b=>`<li><span class="when">${b.nights}</span><br><strong>${b.name}</strong></li>`).join("");
+      const flights = m.flights.map(f=>`<li><span class="when">${f.date}</span><br><strong>${f.what}</strong> ${f.detail}</li>`).join("");
+      const dinners = m.dinners.map(d=>`<li><span class="when">${d.date}</span><br><strong>${d.where}</strong> — ${d.note}</li>`).join("");
+      doc.appendChild(el(`<div class="sec-wrap"><h2 class="sec">Quick Reference</h2>
+        <div class="qref">
+          <div class="blk"><h3>✈ Flights</h3><ul>${flights}</ul></div>
+          <div class="blk"><h3>🛏 Hotels</h3><ul>${hotels}</ul></div>
+          <div class="blk" style="grid-column:1/-1"><h3>🍽 Booked Dinners — don't be late</h3><ul>${dinners}</ul></div>
+        </div></div>`));
+
+      // WEATHER
+      const wxRows = WX.rows.map(r=>`<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td class="flag ${r[4]}">${r[5]}</td></tr>`).join("");
+      const wxAdvice = WX.advice.map(a=>`<li>${a}</li>`).join("");
+      doc.appendChild(el(`<div class="sec-wrap"><h2 class="sec">Weather Outlook &amp; Game-Time Calls</h2>
+        <div class="wx">
+          <div style="font-family:var(--font-type);font-size:9px;color:var(--ember-deep)">Forecast snapshot pulled ${WX.pulled} — re-check at any lodge with wifi.</div>
+          <table><tr><th>Date</th><th>Base</th><th>Plan</th><th>Forecast</th><th>Call</th></tr>${wxRows}</table>
+          <div class="verdict"><b>Verdict:</b> stick with the structure — the big Teton hike already sits on the best day (Fri 26). Two tweaks:</div>
+          <ul style="margin:4px 0 0 16px">${wxAdvice}</ul>
+        </div></div>`));
+
+      // DAYS
+      const daysWrap = el(`<div class="sec-wrap page-break"><h2 class="sec">Day by Day</h2></div>`);
+      TRIP.days.forEach(d=>{
+        const opts = d.options.map(o=>`<div class="opt"><span class="tag ${o.tier}">${TIER[o.tier]||o.tier}</span><span class="ti">${o.icon} ${o.title}.</span> <span class="bo">${o.body}</span></div>`).join("");
+        daysWrap.appendChild(el(`<div class="day">
+          <div class="day-head">
+            <span class="day-num">${String(d.num).padStart(2,"0")}</span>
+            <span class="day-date">${d.date}</span>
+            <span class="day-title">${d.title}</span>
+            ${d.special?`<span class="day-special">${d.special}</span>`:""}
+          </div>
+          <div class="day-meta">🛏 ${d.base} &nbsp; · &nbsp; 🚗 ${d.drive}</div>
+          <div class="day-blurb">${d.blurb}</div>
+          <div class="opts">${opts}</div>
+          <div class="day-foot"><span class="lbl">Rendezvous:</span> ${d.rendezvous}<br><span class="lbl">Fuel &amp; supplies:</span> ${d.fuel}</div>
+        </div>`));
+      });
+      doc.appendChild(daysWrap);
+
+      // CAMP NOTES
+      const camp = el(`<div class="sec-wrap page-break"><h2 class="sec">Camp Notes — Food &amp; Stores</h2></div>`);
+      TRIP.bases.forEach(b=>{
+        camp.appendChild(el(`<div class="base">
+          <h3>${b.name}</h3><div class="nights">${b.nights} · ${b.weather.elev}</div>
+          <div class="cols">
+            <div><h4>🍽 Eat</h4><ul>${b.eat.map(x=>`<li>${x}</li>`).join("")}</ul></div>
+            <div><h4>🛒 Stores &amp; supplies</h4><ul>${b.shop.map(x=>`<li>${x}</li>`).join("")}</ul></div>
+          </div></div>`));
+      });
+      doc.appendChild(camp);
+
+      // BREWERIES
+      const beers = TRIP.breweries.map(b=>`<div class="b"><span class="bn">${b.name}</span> <span class="bt">${b.town} · ${b.when} · kids: ${b.kid}</span><br>${b.desc}</div>`).join("");
+      doc.appendChild(el(`<div class="sec-wrap"><h2 class="sec">The Brewery Log</h2><div class="beer">${beers}</div></div>`));
+
+      // NOTES
+      const closures = TRIP.knownClosures.map(c=>`<li>${c}</li>`).join("");
+      doc.appendChild(el(`<div class="sec-wrap"><h2 class="sec">Good to Know</h2>
+        <ul class="notes" style="margin-left:16px"><li>${TRIP.weatherNote}</li>${closures}</ul></div>`));
+
+      doc.appendChild(el(`<div class="footer">Made with pins &amp; string for The Pioneers · live version + map at dbrocha.github.io/yellowstone2026</div>`));
+    }
+    render();
+  </script>
+</body>
+</html>

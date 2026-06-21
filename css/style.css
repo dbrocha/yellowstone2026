@@ -76,6 +76,11 @@ body {
   transition: color .15s, border-color .15s;
 }
 .ticket-nav a:hover { color: var(--amber); border-color: var(--amber); }
+.ticket-nav a.ticket-nav__pdf {
+  border: 1.5px solid var(--amber); border-radius: 3px; color: var(--amber);
+  padding: 2px 9px; letter-spacing: .02em;
+}
+.ticket-nav a.ticket-nav__pdf:hover { background: var(--amber); color: var(--evergreen-deep); }
 
 /* ---------- hero: vista + routed wood sign ---------- */
 .hero { position: relative; padding: 0 0 26px; }
@@ -173,6 +178,30 @@ body {
   color: var(--evergreen);
   text-align: center; margin-top: 22px; line-height: 1.7;
 }
+
+.hero__pdf {
+  display: inline-grid; justify-items: center; gap: 2px;
+  margin: 18px auto 0;
+  text-decoration: none;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.06), rgba(0,0,0,.18)),
+    var(--wood-grain),
+    linear-gradient(150deg, var(--timber-mid), var(--timber) 75%);
+  border: 2px solid #2c1f10; border-radius: 6px;
+  padding: 11px 22px;
+  box-shadow: 0 4px 0 -2px #241808, 0 10px 22px rgba(28,22,10,.4);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.hero__pdf {
+  font-family: var(--font-display); font-size: clamp(.86rem, 2.2vw, 1.05rem);
+  color: var(--parchment); letter-spacing: .02em;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.55);
+}
+.hero__pdf span {
+  font-family: var(--font-type); font-size: .68rem; letter-spacing: .02em;
+  color: var(--manila); text-shadow: none;
+}
+.hero__pdf:hover { transform: translateY(-2px); box-shadow: 0 6px 0 -2px #241808, 0 14px 28px rgba(28,22,10,.45); }
 
 /* ---------- sections ---------- */
 main { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
