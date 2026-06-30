@@ -1,6 +1,13 @@
 {
-  "updated": "2026-06-29T12:43:31Z",
+  "updated": "2026-06-30T12:00:55Z",
   "alerts": [
+    {
+      "park": "Yellowstone",
+      "category": "Caution",
+      "title": "Elk with Calves are Extremely Dangerous",
+      "description": "Be alert, especially this time of year around Mammoth Hot Springs. Elk calves may be hidden close to buildings, under or next to vehicles, and around blind corners. You must remain at least 25 yards from all wildlife. If an elk charges, retreat!",
+      "url": "https://www.nps.gov/yell/planyourvisit/safety.htm#elk"
+    },
     {
       "park": "Grand Teton",
       "category": "Caution",
@@ -28,20 +35,6 @@
       "title": "Expect Delays: Park-wide Road Striping",
       "description": "Road striping is underway from south to north on major and minor park roads, turnouts, and lots. Expect slow traffic, pilot cars, and delays up to 15 minutes. Drive with caution and do not cross wet paint lines. Work is highly weather-dependent. Plan for extra travel time.",
       "url": ""
-    },
-    {
-      "park": "Yellowstone",
-      "category": "Caution",
-      "title": "Elk with Calves are Extremely Dangerous",
-      "description": "Be alert, especially this time of year around Mammoth Hot Springs. Elk calves may be hidden close to buildings, under or next to vehicles, and around blind corners. You must remain at least 25 yards from all wildlife. If an elk charges, retreat!",
-      "url": "https://www.nps.gov/yell/planyourvisit/safety.htm#elk"
-    },
-    {
-      "park": "Yellowstone",
-      "category": "Park Closure",
-      "title": "Temporary Closure of Some Trails, Backcountry Campsites, and Fishing Areas",
-      "description": "Certain trails, backcountry campsites, and fishing areas in the western part of the park near Biscuit Basin are closed until further notice to allow for an investigation following a bear-caused human injury.",
-      "url": "https://www.nps.gov/yell/learn/news/26008.htm"
     },
     {
       "park": "Yellowstone",
