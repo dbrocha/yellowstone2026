@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-30T12:00:55Z",
+  "updated": "2026-07-01T12:17:05Z",
   "alerts": [
     {
       "park": "Yellowstone",
-      "category": "Caution",
-      "title": "Elk with Calves are Extremely Dangerous",
-      "description": "Be alert, especially this time of year around Mammoth Hot Springs. Elk calves may be hidden close to buildings, under or next to vehicles, and around blind corners. You must remain at least 25 yards from all wildlife. If an elk charges, retreat!",
-      "url": "https://www.nps.gov/yell/planyourvisit/safety.htm#elk"
+      "category": "Park Closure",
+      "title": "Biscuit Basin Closed Due to Hydrothermal Explosion",
+      "description": "The parking lot, boardwalk, and Firehole River at Biscuit Basin, located north of Old Faithful, is closed to all travel until further notice due to the possibility of another event at the site of a hydrothermal explosion that occurred July 23, 2024.",
+      "url": "https://www.nps.gov/yell/images/Biscuit_Basin_Closure_Map_20250529_1.png"
     },
     {
       "park": "Grand Teton",
