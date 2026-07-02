@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T12:17:05Z",
+  "updated": "2026-07-02T11:58:12Z",
   "alerts": [
     {
       "park": "Yellowstone",
@@ -28,13 +28,6 @@
       "title": "Death Canyon Trailhead Construction Closure",
       "description": "Death Canyon Road and Trailhead are closed to all use. Start hikes at alternative trailheads such as Granite Canyon, LSR Preserve, and Taggart Lake.",
       "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
-    },
-    {
-      "park": "Grand Teton",
-      "category": "Information",
-      "title": "Expect Delays: Park-wide Road Striping",
-      "description": "Road striping is underway from south to north on major and minor park roads, turnouts, and lots. Expect slow traffic, pilot cars, and delays up to 15 minutes. Drive with caution and do not cross wet paint lines. Work is highly weather-dependent. Plan for extra travel time.",
-      "url": ""
     },
     {
       "park": "Yellowstone",
