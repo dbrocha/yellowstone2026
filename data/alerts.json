@@ -1,6 +1,20 @@
 {
-  "updated": "2026-07-09T13:57:51Z",
+  "updated": "2026-07-10T13:18:34Z",
   "alerts": [
+    {
+      "park": "Yellowstone",
+      "category": "Information",
+      "title": "Select rivers closed to fishing daily, 2 p.m. to sunrise",
+      "description": "The following rivers and their tributaries will close daily from 2 p.m. to sunrise due to warm water temperatures and low flows: Madison River, Firehole River, and Gibbon River.",
+      "url": "https://www.nps.gov/yell/learn/news/26015.htm"
+    },
+    {
+      "park": "Yellowstone",
+      "category": "Information",
+      "title": "Traffic Delays - Gibbon River Bridge",
+      "description": "Expect up to 15-minute delays on Gibbon River Bridge from July 9 through late-July while crews repair the railing.",
+      "url": "https://www.nps.gov/yell/planyourvisit/parkroads.htm"
+    },
     {
       "park": "Yellowstone",
       "category": "Park Closure",
