@@ -1,6 +1,13 @@
 {
-  "updated": "2026-07-10T13:18:34Z",
+  "updated": "2026-07-11T12:03:16Z",
   "alerts": [
+    {
+      "park": "Grand Teton",
+      "category": "Caution",
+      "title": "Construction in the South End of the Park",
+      "description": "Construction projects underway. Moose-Wilson Road open between Granite Entrance and Moose June 19 - Sept. 7. Expect delays of 45 minutes or longer. Death Canyon Road and Trailhead closed. Taggart Trail detour in place. Menor's Ferry Road closed weekdays.",
+      "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
+    },
     {
       "park": "Yellowstone",
       "category": "Information",
@@ -28,13 +35,6 @@
       "title": "Measles case in Teton County confirmed by Wyoming Department of Health",
       "description": "The Wyoming Department of Health (WDH) has confirmed a case of measles in an unvaccinated adult from Teton County. Visitors and residents may have been exposed at several locations in Teton County, including the Colter Bay area in Grand Teton National Park. View exposure location…",
       "url": "https://health.wyo.gov/second-measles-case-of-2026-confirmed-by-wyoming-department-of-health/"
-    },
-    {
-      "park": "Grand Teton",
-      "category": "Caution",
-      "title": "Construction in the South End of the Park",
-      "description": "Construction projects underway. Moose-Wilson Road open between Granite Entrance and Moose June 19 - Sept. 7. Expect delays of 45 minutes or longer. Death Canyon Road and Trailhead closed. Taggart Trail detour in place.",
-      "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
     },
     {
       "park": "Grand Teton",
