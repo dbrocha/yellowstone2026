@@ -1,6 +1,13 @@
 {
-  "updated": "2026-07-11T12:03:16Z",
+  "updated": "2026-07-12T12:07:10Z",
   "alerts": [
+    {
+      "park": "Grand Teton",
+      "category": "Caution",
+      "title": "Second measles case in Teton Co. confirmed by Wyoming Department of Health",
+      "description": "The Wyoming Department of Health (WDH) has confirmed a second case of measles in Teton County. Visitors and residents may have been exposed at several locations in Teton County, including the Colter Bay area in Grand Teton National Park. View exposure locations and guidance from …",
+      "url": "https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/measles/"
+    },
     {
       "park": "Grand Teton",
       "category": "Caution",
@@ -28,13 +35,6 @@
       "title": "Biscuit Basin Closed Due to Hydrothermal Explosion",
       "description": "The parking lot, boardwalk, and Firehole River at Biscuit Basin, located north of Old Faithful, is closed to all travel until further notice due to the possibility of another event at the site of a hydrothermal explosion that occurred July 23, 2024.",
       "url": "https://www.nps.gov/yell/images/Biscuit_Basin_Closure_Map_20250529_1.png"
-    },
-    {
-      "park": "Grand Teton",
-      "category": "Caution",
-      "title": "Measles case in Teton County confirmed by Wyoming Department of Health",
-      "description": "The Wyoming Department of Health (WDH) has confirmed a case of measles in an unvaccinated adult from Teton County. Visitors and residents may have been exposed at several locations in Teton County, including the Colter Bay area in Grand Teton National Park. View exposure location…",
-      "url": "https://health.wyo.gov/second-measles-case-of-2026-confirmed-by-wyoming-department-of-health/"
     },
     {
       "park": "Grand Teton",
