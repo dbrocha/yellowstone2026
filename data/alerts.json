@@ -1,11 +1,11 @@
 {
-  "updated": "2026-07-13T13:31:45Z",
+  "updated": "2026-07-14T12:38:26Z",
   "alerts": [
     {
       "park": "Grand Teton",
-      "category": "Caution",
-      "title": "Second measles case in Teton Co. confirmed by Wyoming Department of Health",
-      "description": "The Wyoming Department of Health (WDH) has confirmed a second case of measles in Teton County. Visitors and residents may have been exposed at several locations in Teton County, including the Colter Bay area in Grand Teton National Park. View exposure locations and guidance from …",
+      "category": "Danger",
+      "title": "Third measles case in Teton Co. confirmed by Wyoming Department of Health",
+      "description": "The Wyoming Department of Health (WDH) has confirmed a third case of measles in Teton County, marking the state's first measles outbreak of 2026.Visitors and residents may have been exposed at several locations in Teton County, including the Colter Bay area in Grand Teton Nationa…",
       "url": "https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/measles/"
     },
     {
