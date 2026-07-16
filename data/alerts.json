@@ -1,6 +1,13 @@
 {
-  "updated": "2026-07-15T12:40:39Z",
+  "updated": "2026-07-16T12:48:49Z",
   "alerts": [
+    {
+      "park": "Yellowstone",
+      "category": "Information",
+      "title": "Madison, Firehole, and Gibbon Rivers Closed to Fishing",
+      "description": "The following rivers and their tributaries are closed to fishing due to warm water temperatures and low flows: Madison River, Firehole River, and Gibbon River.",
+      "url": "https://www.nps.gov/yell/learn/news/26015.htm"
+    },
     {
       "park": "Grand Teton",
       "category": "Danger",
@@ -14,13 +21,6 @@
       "title": "Construction in the South End of the Park",
       "description": "Construction projects underway. Moose-Wilson Road open between Granite Entrance and Moose June 19 - Sept. 7. Expect delays of 45 minutes or longer. Death Canyon Road and Trailhead closed. Taggart Trail detour in place. Menor's Ferry Road closed weekdays.",
       "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
-    },
-    {
-      "park": "Yellowstone",
-      "category": "Information",
-      "title": "Select rivers closed to fishing daily, 2 p.m. to sunrise",
-      "description": "The following rivers and their tributaries will close daily from 2 p.m. to sunrise due to warm water temperatures and low flows: Madison River, Firehole River, and Gibbon River.",
-      "url": "https://www.nps.gov/yell/learn/news/26015.htm"
     },
     {
       "park": "Yellowstone",
