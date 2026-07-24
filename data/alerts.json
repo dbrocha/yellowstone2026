@@ -1,19 +1,19 @@
 {
-  "updated": "2026-07-23T12:47:24Z",
+  "updated": "2026-07-24T12:44:07Z",
   "alerts": [
+    {
+      "park": "Grand Teton",
+      "category": "Caution",
+      "title": "Construction in the South End of the Park",
+      "description": "Construction projects underway. Moose-Wilson Road open with delays of 45 minutes in both directions. Death Canyon Road and Trailhead closed. Taggart Trail detour in place. Menor's Ferry Road closed weekdays.",
+      "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
+    },
     {
       "park": "Grand Teton",
       "category": "Danger",
       "title": "Measles outbreak in Teton County",
       "description": "The Teton County Health Department declared a local emergency due to a measles outbreak on July 13, 2026. Visitors and residents may have been exposed at several locations in Teton County, including the Colter Bay area in Grand Teton National Park.",
       "url": "https://www.tetoncountywy.gov/2889/Measles-Rubeola"
-    },
-    {
-      "park": "Grand Teton",
-      "category": "Caution",
-      "title": "Construction in the South End of the Park",
-      "description": "Construction projects underway. Moose-Wilson Road partial closure 7/21 and 7/22 between Murie Ranch and LSR Preserve. Expect delays of 45 minutes or longer all other times. Death Canyon Road and Trailhead closed. Taggart Trail detour in place. Menor's Ferry Road closed weekdays.",
-      "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
     },
     {
       "park": "Yellowstone",
