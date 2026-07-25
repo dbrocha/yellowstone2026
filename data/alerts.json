@@ -1,13 +1,6 @@
 {
-  "updated": "2026-07-24T12:44:07Z",
+  "updated": "2026-07-25T12:08:14Z",
   "alerts": [
-    {
-      "park": "Grand Teton",
-      "category": "Caution",
-      "title": "Construction in the South End of the Park",
-      "description": "Construction projects underway. Moose-Wilson Road open with delays of 45 minutes in both directions. Death Canyon Road and Trailhead closed. Taggart Trail detour in place. Menor's Ferry Road closed weekdays.",
-      "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
-    },
     {
       "park": "Grand Teton",
       "category": "Danger",
