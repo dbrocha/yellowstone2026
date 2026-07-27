@@ -1,6 +1,13 @@
 {
-  "updated": "2026-07-26T12:15:08Z",
+  "updated": "2026-07-27T13:43:40Z",
   "alerts": [
+    {
+      "park": "Yellowstone",
+      "category": "Information",
+      "title": "Traffic Delays - Yellowstone River Bridge",
+      "description": "Expect up to 30-minute delays on the Yellowstone River Bridge, near Tower Junction, while crews perform paving operations. Crews will work during the day until August 7, and at night from August 9-15. Dates and times are subject to change based on weather.",
+      "url": "https://www.nps.gov/yell/planyourvisit/parkroads.htm"
+    },
     {
       "park": "Grand Teton",
       "category": "Danger",
