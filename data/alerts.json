@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-27T13:43:40Z",
+  "updated": "2026-07-28T13:01:02Z",
   "alerts": [
     {
       "park": "Yellowstone",
@@ -10,10 +10,24 @@
     },
     {
       "park": "Grand Teton",
+      "category": "Caution",
+      "title": "Construction in the South End of the Park",
+      "description": "Construction projects underway. Moose-Wilson Road between Murie Ranch and LS Rockefeller Preserve closed 7 a.m. to 7 p.m. July 28-July 30. Expect delays of 45 minutes in both directions all other times. No roadside parking on Moose-Wilson Road. Taggart Trail detour in place. Meno…",
+      "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
+    },
+    {
+      "park": "Grand Teton",
       "category": "Danger",
       "title": "Measles outbreak in Teton County",
       "description": "The Teton County Health Department declared a local emergency due to a measles outbreak on July 13, 2026. Visitors and residents may have been exposed at several locations in Teton County, including the Colter Bay area in Grand Teton National Park.",
       "url": "https://www.tetoncountywy.gov/2889/Measles-Rubeola"
+    },
+    {
+      "park": "Yellowstone",
+      "category": "Information",
+      "title": "Osprey Falls Trail Temporary Closure",
+      "description": "The Osprey Falls Trail, located near Bunsen Peak south of Mammoth, will be temporarily closed for critical trail repair work July 28–Aug. 4, 2026. The trail will be closed all day on July 30-July 31 and from 8 a.m.-4 p.m. all other days during this period. The Old Bunsen Peak Roa…",
+      "url": "https://www.nps.gov/yell/planyourvisit/situationreport.htm"
     },
     {
       "park": "Yellowstone",
