@@ -1,12 +1,33 @@
 {
-  "updated": "2026-07-28T13:01:02Z",
+  "updated": "2026-07-29T13:06:22Z",
   "alerts": [
     {
       "park": "Yellowstone",
       "category": "Information",
+      "title": "Osprey Falls Trail Temporary Closure",
+      "description": "The Osprey Falls Trail, located south of Mammoth Hot Springs near Bunsen Peak, will be temporarily closed for critical trail repair work July 28–Aug. 4 from 8 a.m.–4 p.m. On July 30–31, the trail will be closed all day. The Old Bunsen Peak Road will remain open during repair work…",
+      "url": "https://www.nps.gov/yell/planyourvisit/situationreport.htm"
+    },
+    {
+      "park": "Yellowstone",
+      "category": "Information",
       "title": "Traffic Delays - Yellowstone River Bridge",
-      "description": "Expect up to 30-minute delays on the Yellowstone River Bridge, near Tower Junction, while crews perform paving operations. Crews will work during the day until August 7, and at night from August 9-15. Dates and times are subject to change based on weather.",
+      "description": "Expect up to 30-minute delays on the Yellowstone River Bridge, near Tower Junction, while crews perform paving operations. Crews will work during the day until Aug. 7, and at night Aug. 9-15. Dates and times are subject to change based on weather.",
       "url": "https://www.nps.gov/yell/planyourvisit/parkroads.htm"
+    },
+    {
+      "park": "Yellowstone",
+      "category": "Caution",
+      "title": "Their Space, Your Safety",
+      "description": "Animals in Yellowstone are wild and dangerous. Stay at least 100 yards (91 m) from bears/wolves/cougars and 25 yards (23 m) from bison/elk/all other wildlife. Carry bear spray (even on short walks) and know how to use it—you can rent/purchase/recycle it at several locations in th…",
+      "url": "https://www.nps.gov/yell/planyourvisit/safety.htm"
+    },
+    {
+      "park": "Yellowstone",
+      "category": "Information",
+      "title": "Park Rivers and Streams Closed to Fishing Daily from 2 p.m. to Sunrise",
+      "description": "All park rivers and streams are closed to fishing daily from 2 p.m. to sunrise due to high water temperatures and low stream flows. Additionally, the Madison, Firehole, and Gibbon (downstream of Norris Campground) rivers are fully closed to fishing. These closures will remain in …",
+      "url": "https://www.nps.gov/yell/learn/news/26015.htm"
     },
     {
       "park": "Grand Teton",
@@ -14,27 +35,6 @@
       "title": "Construction in the South End of the Park",
       "description": "Construction projects underway. Moose-Wilson Road between Murie Ranch and LS Rockefeller Preserve closed 7 a.m. to 7 p.m. July 28-July 30. Expect delays of 45 minutes in both directions all other times. No roadside parking on Moose-Wilson Road. Taggart Trail detour in place. Meno…",
       "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
-    },
-    {
-      "park": "Grand Teton",
-      "category": "Danger",
-      "title": "Measles outbreak in Teton County",
-      "description": "The Teton County Health Department declared a local emergency due to a measles outbreak on July 13, 2026. Visitors and residents may have been exposed at several locations in Teton County, including the Colter Bay area in Grand Teton National Park.",
-      "url": "https://www.tetoncountywy.gov/2889/Measles-Rubeola"
-    },
-    {
-      "park": "Yellowstone",
-      "category": "Information",
-      "title": "Osprey Falls Trail Temporary Closure",
-      "description": "The Osprey Falls Trail, located near Bunsen Peak south of Mammoth, will be temporarily closed for critical trail repair work July 28–Aug. 4, 2026. The trail will be closed all day on July 30-July 31 and from 8 a.m.-4 p.m. all other days during this period. The Old Bunsen Peak Roa…",
-      "url": "https://www.nps.gov/yell/planyourvisit/situationreport.htm"
-    },
-    {
-      "park": "Yellowstone",
-      "category": "Information",
-      "title": "Madison, Firehole, and Gibbon Rivers Closed to Fishing",
-      "description": "The following rivers and their tributaries are closed to fishing due to warm water temperatures and low flows: Madison River, Firehole River, and Gibbon River.",
-      "url": "https://www.nps.gov/yell/learn/news/26015.htm"
     },
     {
       "park": "Yellowstone",
