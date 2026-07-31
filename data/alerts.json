@@ -1,6 +1,13 @@
 {
-  "updated": "2026-07-30T12:52:57Z",
+  "updated": "2026-07-31T13:04:56Z",
   "alerts": [
+    {
+      "park": "Yellowstone",
+      "category": "Information",
+      "title": "Park Rivers and Streams Closed to Fishing Daily from 2 p.m. to Sunrise",
+      "description": "All park rivers and streams are closed to fishing daily from 2 p.m. to sunrise due to high water temperatures and low stream flows. Additionally, the Madison, Firehole, and Gibbon (downstream of Norris Campground) rivers are fully closed to fishing. These closures will remain in …",
+      "url": "https://www.nps.gov/yell/learn/news/26015.htm"
+    },
     {
       "park": "Yellowstone",
       "category": "Information",
@@ -21,13 +28,6 @@
       "title": "Their Space, Your Safety",
       "description": "Animals in Yellowstone are wild and dangerous. Stay at least 100 yards (91 m) from bears/wolves/cougars and 25 yards (23 m) from bison/elk/all other wildlife. Carry bear spray (even on short walks) and know how to use it—you can rent/purchase/recycle it at several locations in th…",
       "url": "https://www.nps.gov/yell/planyourvisit/safety.htm"
-    },
-    {
-      "park": "Yellowstone",
-      "category": "Information",
-      "title": "Park Rivers and Streams Closed to Fishing Daily from 2 p.m. to Sunrise",
-      "description": "All park rivers and streams are closed to fishing daily from 2 p.m. to sunrise due to high water temperatures and low stream flows. Additionally, the Madison, Firehole, and Gibbon (downstream of Norris Campground) rivers are fully closed to fishing. These closures will remain in …",
-      "url": "https://www.nps.gov/yell/learn/news/26015.htm"
     },
     {
       "park": "Grand Teton",
