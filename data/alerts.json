@@ -1,6 +1,20 @@
 {
-  "updated": "2026-07-31T13:04:56Z",
+  "updated": "2026-08-01T12:11:39Z",
   "alerts": [
+    {
+      "park": "Grand Teton",
+      "category": "Caution",
+      "title": "Construction in the South End of the Park",
+      "description": "Construction projects underway. Moose-Wilson Road between Murie Ranch and LS Rockefeller Preserve open with delays of 45 minutes in both directions. No roadside parking on Moose-Wilson Road. Taggart Trail detour in place. Menor's Ferry Road closed weekdays. Mormon Row area open w…",
+      "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
+    },
+    {
+      "park": "Grand Teton",
+      "category": "Caution",
+      "title": "Construction on North Park Road",
+      "description": "Construction underway on North Park Road between Leeks Marina and Lizard Creek Campground. 15-min delays both directions 6am-9pm / 1-hour delays both directions 9pm-6am. The section of road is about 7 miles north of Colter Bay and 11.5 miles south of Yellowstone.",
+      "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
+    },
     {
       "park": "Yellowstone",
       "category": "Information",
@@ -28,13 +42,6 @@
       "title": "Their Space, Your Safety",
       "description": "Animals in Yellowstone are wild and dangerous. Stay at least 100 yards (91 m) from bears/wolves/cougars and 25 yards (23 m) from bison/elk/all other wildlife. Carry bear spray (even on short walks) and know how to use it—you can rent/purchase/recycle it at several locations in th…",
       "url": "https://www.nps.gov/yell/planyourvisit/safety.htm"
-    },
-    {
-      "park": "Grand Teton",
-      "category": "Caution",
-      "title": "Construction in the South End of the Park",
-      "description": "Construction projects underway. Moose-Wilson Road between Murie Ranch and LS Rockefeller Preserve closed 7 a.m. to 7 p.m. July 28-July 30. Expect delays of 45 minutes in both directions all other times. No roadside parking on Moose-Wilson Road. Taggart Trail detour in place. Meno…",
-      "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
     },
     {
       "park": "Yellowstone",
