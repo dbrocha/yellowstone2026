@@ -1,6 +1,13 @@
 {
-  "updated": "2026-08-12T11:56:10Z",
+  "updated": "2026-08-13T11:57:29Z",
   "alerts": [
+    {
+      "park": "Yellowstone",
+      "category": "Information",
+      "title": "Select Park Rivers Closed to Fishing",
+      "description": "The Madison, Firehole and Gibbon (downstream of Norris Campground) rivers are closed to fishing until water temperatures cool to protect the park's native and wild trout fisheries. Most other rivers and streams are open to fishing, as specified in park fishing regulations.",
+      "url": "https://www.nps.gov/yell/learn/news/26015.htm"
+    },
     {
       "park": "Grand Teton",
       "category": "Caution",
@@ -14,13 +21,6 @@
       "title": "Construction on North Park Road",
       "description": "Construction underway on North Park Road between Leeks Marina and Lizard Creek Campground. 15-min delays both directions 6am-9pm / 1-hour delays both directions 9pm-6am. The section of road is about 7 miles north of Colter Bay and 11.5 miles south of Yellowstone.",
       "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
-    },
-    {
-      "park": "Yellowstone",
-      "category": "Information",
-      "title": "Park Rivers and Streams Closed to Fishing Daily from 2 p.m. to Sunrise",
-      "description": "All park rivers and streams are closed to fishing daily from 2 p.m. to sunrise due to high water temperatures and low stream flows. Additionally, the Madison, Firehole, and Gibbon (downstream of Norris Campground) rivers are fully closed to fishing. These closures will remain in …",
-      "url": "https://www.nps.gov/yell/learn/news/26015.htm"
     },
     {
       "park": "Yellowstone",
