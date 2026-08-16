@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-15T11:32:24Z",
+  "updated": "2026-08-16T11:32:24Z",
   "alerts": [
     {
       "park": "Yellowstone",
@@ -21,13 +21,6 @@
       "title": "Construction on North Park Road",
       "description": "Construction underway on North Park Road between Leeks Marina and Lizard Creek Campground. 15-min delays both directions 6am-9pm / 1-hour delays both directions 9pm-6am. The section of road is about 7 miles north of Colter Bay and 11.5 miles south of Yellowstone.",
       "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
-    },
-    {
-      "park": "Yellowstone",
-      "category": "Information",
-      "title": "Traffic Delays - Yellowstone River Bridge",
-      "description": "Expect up to 30-minute delays on the Yellowstone River Bridge, near Tower Junction, while crews perform paving operations. Crews will work during the day until Aug. 7, and at night Aug. 9-15. Dates and times are subject to change based on weather.",
-      "url": "https://www.nps.gov/yell/planyourvisit/parkroads.htm"
     },
     {
       "park": "Yellowstone",
