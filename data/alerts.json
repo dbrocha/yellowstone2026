@@ -1,19 +1,19 @@
 {
-  "updated": "2026-08-21T11:38:48Z",
+  "updated": "2026-08-22T11:33:09Z",
   "alerts": [
+    {
+      "park": "Grand Teton",
+      "category": "Caution",
+      "title": "Construction in the South End of the Park",
+      "description": "Construction projects underway. Moose-Wilson Road between Murie Ranch and LS Rockefeller Preserve open with delays of 45 minutes in both directions. No roadside parking on Moose-Wilson Road. Expected to close 9/7. Taggart Trail detour in place. Menor's Ferry Road closed weekdays.…",
+      "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
+    },
     {
       "park": "Yellowstone",
       "category": "Information",
       "title": "Select Park Rivers Closed to Fishing",
       "description": "The Madison, Firehole and Gibbon (downstream of Norris Campground) rivers are closed to fishing until water temperatures cool to protect the park's native and wild trout fisheries. Most other rivers and streams are open to fishing, as specified in park fishing regulations.",
       "url": "https://www.nps.gov/yell/learn/news/26015.htm"
-    },
-    {
-      "park": "Grand Teton",
-      "category": "Caution",
-      "title": "Construction in the South End of the Park",
-      "description": "Construction projects underway. Moose-Wilson Road between Murie Ranch and LS Rockefeller Preserve open with delays of 45 minutes in both directions. No roadside parking on Moose-Wilson Road. Taggart Trail detour in place. Menor's Ferry Road closed weekdays. Mormon Row area open w…",
-      "url": "https://www.nps.gov/grte/planyourvisit/road-construction.htm"
     },
     {
       "park": "Grand Teton",
